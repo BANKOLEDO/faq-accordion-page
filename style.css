@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+    --light-purple: hsl(292, 83%, 35%);
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#entire-page {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--light-pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-container {
+    margin: 0 0 4rem 0;
+    width: 22rem;
+    padding: 1rem 1.3rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+}
+
+.answer {
+    color: var(--grayish-purple);
+}
+
+.top-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.star {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.faqs {
+    font-size: 2rem;
+    color: var(--dark-purple);
+}
+
+.top-question-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.questions {
+    margin-bottom: 1rem;
+}
+
+.question {
+    font-size: 1rem;
+    margin-right: 1.8rem;
+    color: var(--dark-purple);
+}
+
+.question:hover {
+    color: var(--light-purple)
+}
+
+.content-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.hr {
+    border: 1px solid black;
+    opacity: 0.1;
+}
+.attribution {
+    font-weight: 900;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 1000px){
+    #entire-page {
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+    }
+
+    #card-container {
+        margin-top: 1rem;
+        width: 30rem;
+    }
+}
